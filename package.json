@@ -1,0 +1,23 @@
+{
+  "name": "node-gc-slowlog",
+  "version": "0.1.0",
+  "description": "Slow logs for nodejs, log whenever a GC event breaches a threshold",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lovwal/node-gc-slowlog.git"
+  },
+  "keywords": [
+    "garbage",
+    "collection"
+  ],
+  "author": "Love Walden",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lovwal/node-gc-slowlog/issues"
+  },
+  "homepage": "https://github.com/lovwal/node-gc-slowlog#readme"
+}

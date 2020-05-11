@@ -5,9 +5,14 @@ var threshold = 20;
 const perfObserver = new perf.PerformanceObserver((l) => {
   l.getEntries().forEach((entry) => {
     if (entry.duration >= threshold) {
-        console.log((new Date()).toISOString(), 
-            'msg="slow GC detected" type='+getGCType(entry.kind),
-            'duration='+entry.duration+'ms');
+      let start = entry.startTime+perf.performance.timeOrigin
+      let end = start+entry.duration
+
+      console.log((new Date()).toISOString(), 
+          'msg="slow GC detected" type='+getGCType(entry.kind),
+          'duration='+entry.duration+'ms',
+          'start='+(new Date(start).toISOString()),
+          'end='+(new Date(end).toISOString()));
     }
   });
 });

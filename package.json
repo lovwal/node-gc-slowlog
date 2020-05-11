@@ -1,6 +1,6 @@
 {
   "name": "node-gc-slowlog",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Slow logs for nodejs, log whenever a GC event breaches a threshold",
   "main": "index.js",
   "scripts": {
